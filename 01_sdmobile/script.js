@@ -1,5 +1,88 @@
-dontpad.com/bossini/sdmobile
+//dontpad.com/bossini/sdmobile
 
+
+// let calculadoras = {
+//     calculadoraCalipo: 'Casio', cor: 'Preta', preco: 20.00 ,
+//     calculadoraAlek: 'HP', cor: 'Cinza', preco: 150.00 }
+
+// calcular= prom(pt("Qual calculadora deseja? 1-Calipo 2-Alek"))
+// if (calcular == 1) 
+//     console.log(`A calculadora escolhida foi a ${calculadoras.calculadoraCalipo}, que é ${calculadoras.cor} 
+// e custa R$${calculadoras.preco}`)
+    
+// const calculadora = {
+//     marca: 'XPTO',
+//     modelo: 'abc',
+//         operacoes: {
+//             somar: (a, b) => a + b,
+//             subtrair: function(a, b) { 
+//                 return a - b; 
+//             }
+//         }
+
+// }
+
+// for(let operacao of Object.keys(calculadora.operacoes)) {
+//     console.log(`Operação: ${operacao} ${calculadora.operacoes[operacao](2, 3)}`);
+// }
+
+
+// console.log('eu 1°')
+// console.log('agora eu')
+// console.log('ultimo')
+
+
+//     function demorada(){
+//         const atualMais2 = new Date().getTime() + 2000
+//         while(new Date().getTime() < atualMais2);
+//         const d = 8 + 4
+//         return d
+//     }
+//     const a = 2 + 3
+//     const b = 5 + 9
+//     setTimeout(() => {
+//         const d = demorada()
+//         console.log(`d: ${d}`)
+//     }, 600)
+//     setTimeout(() => {
+//     const e = 2 + a - b
+//     console.log(`e: ${e}`)
+// },   500)
+// const e = 2 + a - b
+// console.log(e)
+    
+
+const fs = require('fs')
+const abrirArquivo = function(caminho, callback) {
+//callback: função que é passada como parâmetro para outra função
+function exibirConteudo(err, conteudo){
+    if(err){
+        console.log('Deu erro: '+ err.message)}
+    else {
+        console.log(`conteudo: ${conteudo}.toString`())
+    }
+    
+    console.log('C')
+}
+
+    fs.readFile(nomeArquivo) //operação IO-BOUND
+    console.log('B')
+}
+abrirArquivo('arquivo.txt') 
+
+
+
+
+// const pessoa = {
+//     pessoa: 'Neymar',
+//     idade: 33,
+//     cidade: 'Santos',
+//    estadio: 'Vila Belmiro'
+// }
+
+
+// console.log("pessoa:\n"+pessoa.join("\n"));
+ 
 // //funções
 // //functions
 // //arrow functions
